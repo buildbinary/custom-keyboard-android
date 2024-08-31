@@ -23,7 +23,7 @@ jobs:
           cache: 'gradle'
 
       - name: Build Debug APK with Gradle
-        run: chmod +x ./gradlew && ./gradlew assembleDebug
+        run: gradle assembleDebug
 
       - name: Upload apk as artifact
         uses: actions/upload-artifact@v2
